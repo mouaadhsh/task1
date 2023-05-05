@@ -1,0 +1,106 @@
+:root {
+    --Soft: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(217, 54%, 11%);
+}
+
+hr {
+    margin-top: 6px;
+    margin-bottom: 6px;
+    border: 1px solid hsl(215, 32%, 27%);
+}
+
+.title {
+    margin-bottom: 10px;
+}
+
+.card {
+
+    background-color: hsl(216, 50%, 16%);
+    color: hsl(0, 0%, 100%);
+    width: 340px;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    box-shadow: 6px 10px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .desc {
+    color: hsl(0, 0%, 60%);
+    font-weight: 300;
+    margin-bottom: 16px;
+    font-size: 18px;
+}
+
+
+.subDesc {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.subDesc .price,
+.timeLeft {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.subDesc .price img,
+.timeLeft img {
+    margin-right: 5px;
+}
+
+.subDesc .price {
+    color: var(--Cyan);
+    font-weight: 600;
+}
+
+.subDesc .timeLeft {
+    color: var(--Soft);
+}
+
+.createdBy p span {
+    color: hsl(0, 0%, 60%);
+}
+
+.createdBy {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.createdBy .profilePic {
+    margin-right: 8px;
+    margin-top: 8px;
+}
+
+.createdBy .profilePic img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: 1.5px solid white;
+
+}

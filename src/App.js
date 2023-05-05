@@ -1,23 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
-
+import React from 'react';
+import Card from './components/Card';
+import ImagPath from "./components/images/image-equilibrium.jpg";
+import PFP from "./components/images/image-avatar.png";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Card img = {ImagPath} title ={"Equilibrium #3429"} desc = {" Our Equilibrium collection pomotes balance and calm"} price = {"0.041"} timeLeft = {"3 days"} pfp = {PFP} Creator = {" Jules Wyvern"} ></Card>
     </div>
   );
 }

@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.Image{
+    border-radius: 8px;
+    margin-bottom: 16px;
+    height: 300px;
+    position: relative;
+    width: 300px;
+    left: 50%;
+    transform: translateX(-50%);
+}
