@@ -1,9 +1,10 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-.Image{
+
+.Image {
     border-radius: 8px;
     margin-bottom: 16px;
     height: 300px;
@@ -11,4 +12,39 @@
     width: 300px;
     left: 50%;
     transform: translateX(-50%);
+    transition: filter 0.3s ease-out;
+}
+.imgCountainer{
+    position: relative;
+}
+
+.imgCountainer:hover .Image {
+    /* filter: brightness(90%) saturate(80%) hue-rotate(178deg); */
+}
+
+.overlay {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, calc(-50% - 10px));
+    background: hsla(178, 100%, 50%, 0.562);
+    border-radius: 8px;
+    opacity: 0;
+    /* transition: opacity 0.3s ease-out; */
+}
+.overlay img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.imgCountainer:hover  .overlay {
+    opacity: 1;
+}
+
+.overlay i {
+    font-size: 48px;
+    color: #fff;
 }

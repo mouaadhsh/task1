@@ -32,7 +32,7 @@ const Card = (props) => {
             </div>
             <p>
               <span>Creation of </span>
-              Jules Wyvern
+              {props.Creator || "Jules Wyvern"}
             </p>
           </div>
         </div>
